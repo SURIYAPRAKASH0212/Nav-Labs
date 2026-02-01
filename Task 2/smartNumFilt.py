@@ -1,18 +1,18 @@
 def prime(n):
-  c=0
+  count=0
   for i in range(1,n+1):
     if n%i==0:
-     c+=1
-  if c==2:
+     count+=1
+  if count==2:
     return(n)
   else:
-    return(0 )
+    return 0
 n=int(input("Enter n:"))
-t=n
-c=0
-while t!=0:
-  r=t%10
-  t=t//10
-  a=prime(r)
-  c=c+a
-print(c)
+temp=n
+count=0
+while temp!=0:
+  rem=temp%10
+  temp=temp//10
+  ans=prime(rem)
+  count=count+ans
+print(count)
