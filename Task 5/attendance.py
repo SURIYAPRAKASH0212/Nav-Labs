@@ -3,4 +3,4 @@ class Attendance:
         print(name, "Present")
 
 a = Attendance()
-a.record("Anu")
+a.record("Suriya")
